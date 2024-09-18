@@ -1,1 +1,8 @@
-<p>contact works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="first-name">Fist Name: </label>
+    <input type="text" id="first-name" formControlName="firstName">
+
+    <label for="last-name">Last Name: </label>
+    <input type="text" id="last-name" formControlName="lastName">
+    <button>Enviar</button>
+</form>
